@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mra6
+    relative_path: urdf/mra6.urdf
+  SRDF:
+    relative_path: config/mra6.srdf
+  CONFIG:
+    author_name: auboros
+    author_email: mengnanli@aliyun.com
+    generated_timestamp: 1499656295
