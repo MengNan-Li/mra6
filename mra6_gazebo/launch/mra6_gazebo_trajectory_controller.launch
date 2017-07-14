@@ -1,0 +1,7 @@
+<launch>
+  <rosparam file="$(find mra6_gazebo)/config/mra6_gazebo_trajectory_controller.yaml"  command="load"/>
+
+  <node name="mra6_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/mra6" args="arm_trajectory_controller "/>
+
+</launch>

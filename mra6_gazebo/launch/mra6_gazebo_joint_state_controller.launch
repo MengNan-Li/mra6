@@ -1,0 +1,13 @@
+<launch>
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find mra6_gazebo)/config/mra6_gazebo_joint_state_controller.yaml" command="load"/>
+
+
+  <node name="joint_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+		output="screen" ns="/mra6" args="joint_state_controller" />
+
+
+
+</launch>
+
+
